@@ -1,0 +1,239 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 20px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+/* Hero Section Styling */
+#hero {
+    text-align: center;
+    background-color: #000;
+    padding: 150px 0;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    margin-top: 20px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* About Section Styling */
+#about {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Experiences Section Styling */
+#experiences {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.experience-details {
+    margin-bottom: 2rem;
+}
+
+.experience-details p {
+    margin-bottom: 0.5rem;
+}
+
+/* Education Section Styling */
+#education {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Skills Section Styling */
+#skills {
+    background-color: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 1rem;
+}
+
+/* Interests Section Styling */
+#interests {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Award Section Styling */
+#award {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    #about img {
+        display: none;
+    }
+    
+    /* Center aligning all section content */
+    section {
+        text-align: center;
+    }
+
+    /* Adjusting width to maintain readability on smaller screens */
+    .experience-details,
+    #education,
+    #skills,
+    #interests,
+    #award {
+        text-align: left;
+        max-width: 90%; /* Adjusted width for better readability on smaller screens */
+        margin: 0 auto;
+    }
+}
+
+/* Aturan umum untuk memastikan gambar selalu terlihat */
+#about img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Aturan khusus untuk perangkat dengan lebar layar maksimal 768px (tablet) */
+@media (max-width: 768px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about img {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    #about div {
+        margin-top: 20px;
+    }
+}
+
+/* Aturan khusus untuk perangkat dengan lebar layar maksimal 480px (mobile) */
+@media (max-width: 480px) {
+    #about img {
+        width: 80%;
+        max-width: 150px;
+    }
+}
+
